@@ -1,0 +1,55 @@
+@charset "utf-8";
+/* CSS Document of task-3 */
+body{
+	width: 100%;
+}
+
+a, address, b, big, blockquote, body, cite, code, dd, del, div, dl, dt, em, fieldset, font, form, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, label, legend, li, ol, p, pre, small, span, strong, u, ul, var{  
+    padding: 0;  
+    margin: 0;  
+}  
+   
+a {  
+    text-decoration: none;
+    color: #000;  
+}  
+  
+#tab {  
+    width: 60%;  
+    margin-left: 20%;
+    height: 130px;  
+    border: 1px solid #ddd;  
+    margin-top: 100px;  
+    overflow: hidden;  
+}  
+  
+/*选项卡的头部*/  
+#tab-header {  
+    background-color: #F7F7F7;  
+    height: 30px;  
+    text-align: center;  
+    position: relative;  
+}
+
+#tab-header ul {  
+    width: 100%;  
+    position: absolute;  
+}  
+
+#tab-header ul a {  
+    float: left;  
+    width: 20%;  
+    height: 30px;  
+    line-height: 30px;  
+    border-bottom: 1px solid #dddddd;  
+} 
+ 
+#tab-header ul a:hover {  
+    color: orangered;  
+}  
+
+/*内容*/
+#tab-content {
+	height: 100px;
+	width: 100%;
+}
