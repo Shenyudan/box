@@ -3,55 +3,60 @@ $(document).ready(function(){
   $(".first").click(function(){
     $("#tab-content").html("");
     $.ajax({  
-    url:"http://rapapi.org/mockjsdata/14169/geek",  
-    dataType: "json",  
-    success: function(responseText){  
-    var i=responseText.list.length; 
-      $("#tab-content").html(responseText.list[i-5])}  
-    });
+	    type: "get",
+	    url:"http://rapapi.org/mockjsdata/14169/geek",  
+	    dataType: "json",  
+	    success: function(responseText){  
+	    var i=responseText.list.length; 
+	      $("#tab-content").html(responseText.list[i-5])}  
+	    });
   });
 
   $(".second").click(function(){
     $("#tab-content").html("");
     $.ajax({  
-    url:"http://rapapi.org/mockjsdata/14169/geek",  
-    dataType: "json",  
-    success: function(responseText){  
-    var i=responseText.list.length; 
-      $("#tab-content").html(responseText.list[i-4])}
-    });
+    	type: "get",
+	    url:"http://rapapi.org/mockjsdata/14169/geek",  
+	    dataType: "json",  
+	    success: function(responseText){  
+	    var i=responseText.list.length; 
+	      $("#tab-content").html(responseText.list[i-4])}
+	    });
   });
 
   $(".third").click(function(){
     $("#tab-content").html("");
     $.ajax({  
-    url:"http://rapapi.org/mockjsdata/14169/geek",  
-    dataType: "json",  
-    success: function(responseText){  
-    var i=responseText.list.length; 
-      $("#tab-content").html(responseText.list[i-3])} 
-    });
+    	type: "get",
+	    url:"http://rapapi.org/mockjsdata/14169/geek",  
+	    dataType: "json",  
+	    success: function(responseText){  
+	    var i=responseText.list.length; 
+	      $("#tab-content").html(responseText.list[i-3])} 
+	    });
   });
 
   $(".forth").click(function(){
     $("#tab-content").html("");
     $.ajax({  
-    url:"http://rapapi.org/mockjsdata/14169/geek",  
-    dataType: "json",  
-    success: function(responseText){  
-    var i=responseText.list.length; 
-      $("#tab-content").html(responseText.list[i-2])} 
-    });
+    	type: "get",
+	    url:"http://rapapi.org/mockjsdata/14169/geek",  
+	    dataType: "json",  
+	    success: function(responseText){  
+	    var i=responseText.list.length; 
+	      $("#tab-content").html(responseText.list[i-2])} 
+	    });
   });
 
   $(".fifth").click(function(){
     $("#tab-content").html("");
     $.ajax({  
-    url:"http://rapapi.org/mockjsdata/14169/geek",  
-    dataType: "json",  
-    success: function(responseText){  
-    var i=responseText.list.length; 
-      $("#tab-content").html(responseText.list[i-1])}  
-    });
+    	type: "get",
+	    url:"http://rapapi.org/mockjsdata/14169/geek",  
+	    dataType: "json",  
+	    success: function(responseText){  
+	    var i=responseText.list.length; 
+	      $("#tab-content").html(responseText.list[i-1])}  
+	    });
   });
 });
